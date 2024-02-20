@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jb2s
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0063-tenant/tkrw-pr714-0075-0063-app/devfile-sample-jb2s@sha256:e56e73a1d5c83b77ea12dd61bd45ec060ba8cad58acf330198629eba9ab28a88
+        name: my-nodejs
+        resources: {}
+status: {}
